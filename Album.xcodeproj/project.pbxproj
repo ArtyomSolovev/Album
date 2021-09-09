@@ -13,6 +13,8 @@
 		ACAC3F5E26E9EDC500F0A0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAC3F5C26E9EDC500F0A0D1 /* Main.storyboard */; };
 		ACAC3F6026E9EDC600F0A0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAC3F5F26E9EDC600F0A0D1 /* Assets.xcassets */; };
 		ACAC3F6326E9EDC600F0A0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAC3F6126E9EDC600F0A0D1 /* LaunchScreen.storyboard */; };
+		ACAC3F6D26E9FA7E00F0A0D1 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC3F6C26E9FA7E00F0A0D1 /* HistoryTableViewController.swift */; };
+		ACAC3F6F26E9FAF100F0A0D1 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC3F6E26E9FAF100F0A0D1 /* AlbumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ACAC3F5F26E9EDC600F0A0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACAC3F6226E9EDC600F0A0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACAC3F6426E9EDC600F0A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACAC3F6C26E9FA7E00F0A0D1 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		ACAC3F6E26E9FAF100F0A0D1 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 				ACAC3F5826E9EDC500F0A0D1 /* SceneDelegate.swift */,
 				ACAC3F5A26E9EDC500F0A0D1 /* ViewController.swift */,
 				ACAC3F5C26E9EDC500F0A0D1 /* Main.storyboard */,
+				ACAC3F6C26E9FA7E00F0A0D1 /* HistoryTableViewController.swift */,
 				ACAC3F5F26E9EDC600F0A0D1 /* Assets.xcassets */,
+				ACAC3F6E26E9FAF100F0A0D1 /* AlbumViewController.swift */,
 				ACAC3F6126E9EDC600F0A0D1 /* LaunchScreen.storyboard */,
 				ACAC3F6426E9EDC600F0A0D1 /* Info.plist */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAC3F6D26E9FA7E00F0A0D1 /* HistoryTableViewController.swift in Sources */,
+				ACAC3F6F26E9FAF100F0A0D1 /* AlbumViewController.swift in Sources */,
 				ACAC3F5B26E9EDC500F0A0D1 /* ViewController.swift in Sources */,
 				ACAC3F5726E9EDC500F0A0D1 /* AppDelegate.swift in Sources */,
 				ACAC3F5926E9EDC500F0A0D1 /* SceneDelegate.swift in Sources */,
