@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct Constants {
+enum Constants {
     static let welcomeText = "Enter the album name there 👆"
-    struct id {
-        static let cellId = "cell"
+    enum url {
+        static let BASE_URL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&limit=100&term="
+        static let ALBUM_URL = "https://itunes.apple.com/lookup?entity=song&id="
+    }
+    enum id {
+        static let cellId = "AlbumCell"
         static let trackId = "TrackCell"
         static let albumId = "AlbumViewController"
     }

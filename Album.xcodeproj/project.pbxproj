@@ -20,6 +20,7 @@
 		ACAC3F7B26EAA77600F0A0D1 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC3F7A26EAA77600F0A0D1 /* Track.swift */; };
 		ACAC3F7D26EAA88D00F0A0D1 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC3F7C26EAA88D00F0A0D1 /* TrackCell.swift */; };
 		ACAC3F7F26EAA90C00F0A0D1 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC3F7E26EAA90C00F0A0D1 /* AlbumCell.swift */; };
+		ACAC3F8226EB35CA00F0A0D1 /* iTunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC3F8126EB35CA00F0A0D1 /* iTunes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		ACAC3F7A26EAA77600F0A0D1 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		ACAC3F7C26EAA88D00F0A0D1 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		ACAC3F7E26EAA90C00F0A0D1 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		ACAC3F8126EB35CA00F0A0D1 /* iTunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunes.swift; sourceTree = "<group>"; };
+		ACAC3F8426ED05FA00F0A0D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 		ACAC3F5526E9EDC500F0A0D1 /* Album */ = {
 			isa = PBXGroup;
 			children = (
+				ACAC3F8026EB35A100F0A0D1 /* Networking */,
 				ACAC3F7026EAA22900F0A0D1 /* SupportingFiles */,
 				ACAC3F7226EAA34A00F0A0D1 /* Model */,
 				ACAC3F7326EAA35D00F0A0D1 /* View */,
@@ -81,8 +85,8 @@
 		ACAC3F7026EAA22900F0A0D1 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				ACAC3F5626E9EDC500F0A0D1 /* AppDelegate.swift */,
 				ACAC3F7626EAA41F00F0A0D1 /* Constants.swift */,
+				ACAC3F5626E9EDC500F0A0D1 /* AppDelegate.swift */,
 				ACAC3F5826E9EDC500F0A0D1 /* SceneDelegate.swift */,
 				ACAC3F6426E9EDC600F0A0D1 /* Info.plist */,
 				ACAC3F6126E9EDC600F0A0D1 /* LaunchScreen.storyboard */,
@@ -118,6 +122,14 @@
 				ACAC3F7E26EAA90C00F0A0D1 /* AlbumCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ACAC3F8026EB35A100F0A0D1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ACAC3F8126EB35CA00F0A0D1 /* iTunes.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +208,7 @@
 				ACAC3F7B26EAA77600F0A0D1 /* Track.swift in Sources */,
 				ACAC3F7D26EAA88D00F0A0D1 /* TrackCell.swift in Sources */,
 				ACAC3F5726E9EDC500F0A0D1 /* AppDelegate.swift in Sources */,
+				ACAC3F8226EB35CA00F0A0D1 /* iTunes.swift in Sources */,
 				ACAC3F5926E9EDC500F0A0D1 /* SceneDelegate.swift in Sources */,
 				ACAC3F7F26EAA90C00F0A0D1 /* AlbumCell.swift in Sources */,
 				ACAC3F7926EAA76A00F0A0D1 /* Album.swift in Sources */,
@@ -210,6 +223,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				ACAC3F5D26E9EDC500F0A0D1 /* Base */,
+				ACAC3F8426ED05FA00F0A0D1 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -1,0 +1,87 @@
+
+/* Class = "UILabel"; text = "StyleLabel"; ObjectID = "1k1-6M-ga1"; */
+"1k1-6M-ga1.text" = "StyleLabel";
+
+/* Class = "UILabel"; text = "AlbumLabel"; ObjectID = "3CL-FH-45b"; */
+"3CL-FH-45b.text" = "AlbumLabel";
+
+/* Class = "UILabel"; text = "TrackName"; ObjectID = "5xm-ag-kn1"; */
+"5xm-ag-kn1.text" = "TrackName";
+
+/* Class = "UILabel"; text = "AlbumLabel"; ObjectID = "6wY-4C-UiJ"; */
+"6wY-4C-UiJ.text" = "AlbumLabel";
+
+/* Class = "UILabel"; text = "Country:"; ObjectID = "7y3-23-mFW"; */
+"7y3-23-mFW.text" = "Country:";
+
+/* Class = "UILabel"; text = "StyleLabel"; ObjectID = "8cU-0i-7UC"; */
+"8cU-0i-7UC.text" = "StyleLabel";
+
+/* Class = "UILabel"; text = "Style:"; ObjectID = "8jf-xa-p3I"; */
+"8jf-xa-p3I.text" = "Style:";
+
+/* Class = "UILabel"; text = "albumTitleLabel"; ObjectID = "9Fa-KD-hVm"; */
+"9Fa-KD-hVm.text" = "albumTitleLabel";
+
+/* Class = "UILabel"; text = "CountryLabel"; ObjectID = "9fc-LD-UGN"; */
+"9fc-LD-UGN.text" = "CountryLabel";
+
+/* Class = "UILabel"; text = "Artist:"; ObjectID = "Az7-kZ-rYK"; */
+"Az7-kZ-rYK.text" = "Artist:";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "E3d-ae-CXH"; */
+"E3d-ae-CXH.text" = "100";
+
+/* Class = "UILabel"; text = "Album:"; ObjectID = "F06-ha-tTZ"; */
+"F06-ha-tTZ.text" = "Album:";
+
+/* Class = "UILabel"; text = "YearLabel"; ObjectID = "JJk-tF-IaQ"; */
+"JJk-tF-IaQ.text" = "YearLabel";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "MbN-A0-wYE"; */
+"MbN-A0-wYE.text" = "100";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "Rt5-Vf-7jt"; */
+"Rt5-Vf-7jt.title" = "Search";
+
+/* Class = "UILabel"; text = "Album:"; ObjectID = "UZE-eL-OcD"; */
+"UZE-eL-OcD.text" = "Album:";
+
+/* Class = "UILabel"; text = "CountryLabel"; ObjectID = "V3V-Im-zZ9"; */
+"V3V-Im-zZ9.text" = "CountryLabel";
+
+/* Class = "UISearchBar"; placeholder = "Enter the album name"; ObjectID = "Ysy-yt-XAL"; */
+"Ysy-yt-XAL.placeholder" = "Enter the album name";
+
+/* Class = "UILabel"; text = "ArtistLabel"; ObjectID = "bs5-Kf-5mM"; */
+"bs5-Kf-5mM.text" = "ArtistLabel";
+
+/* Class = "UILabel"; text = "Year:"; ObjectID = "c2Y-1K-Q5v"; */
+"c2Y-1K-Q5v.text" = "Year:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cTy-vC-bGf"; */
+"cTy-vC-bGf.text" = "Label";
+
+/* Class = "UILabel"; text = "Country:"; ObjectID = "fA0-M8-oFf"; */
+"fA0-M8-oFf.text" = "Country:";
+
+/* Class = "UILabel"; text = "TrackName"; ObjectID = "fNx-DJ-6tT"; */
+"fNx-DJ-6tT.text" = "TrackName";
+
+/* Class = "UILabel"; text = "YearLabel"; ObjectID = "j14-zu-1vv"; */
+"j14-zu-1vv.text" = "YearLabel";
+
+/* Class = "UILabel"; text = "Year:"; ObjectID = "lgO-gq-LSl"; */
+"lgO-gq-LSl.text" = "Year:";
+
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "sfk-nF-EHK"; */
+"sfk-nF-EHK.title" = "History";
+
+/* Class = "UILabel"; text = "Artist:"; ObjectID = "tDA-wf-UoI"; */
+"tDA-wf-UoI.text" = "Artist:";
+
+/* Class = "UILabel"; text = "ArtistLabel"; ObjectID = "ySw-tT-CL3"; */
+"ySw-tT-CL3.text" = "ArtistLabel";
+
+/* Class = "UILabel"; text = "Style:"; ObjectID = "zUE-Xp-zru"; */
+"zUE-Xp-zru.text" = "Style:";

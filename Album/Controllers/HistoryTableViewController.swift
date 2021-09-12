@@ -9,37 +9,47 @@ import UIKit
 
 class HistoryTableViewController: UITableViewController {
 
+    var arrayOfHistory = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        getHistory()
+        print("dsf")
+        tableView.reloadData()
+        tableView.tableFooterView =  UIView()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidLoad()
+    }
+    
+    func getHistory(){
+        arrayOfHistory = UserDefaults.standard.object(forKey: "SavedHistory") as? [String] ?? [String]()
+        arrayOfHistory.reverse()
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        arrayOfHistory.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "historyIdentifier", for: indexPath)
+        cell.textLabel?.text = arrayOfHistory[indexPath.row]
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        self.arrayOfHistory.remove(at: indexPath.row)
+        let array = Array (arrayOfHistory.reversed())
+        UserDefaults.standard.setValue(array, forKey: "SavedHistory")
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
+      }
+    }
 
     /*
     // Override to support conditional editing of the table view.

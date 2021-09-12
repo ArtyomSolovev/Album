@@ -9,8 +9,15 @@ import UIKit
 
 class TrackCell: UITableViewCell {
     
-    @IBOutlet private weak var trackNumber: UILabel!
-    @IBOutlet private weak var trackName: UILabel!
+    // UI
+    @IBOutlet weak var trackNumber: UILabel!
+    @IBOutlet weak var trackName: UILabel!
+    
+    // Method
+    func updateCell (track: Track) {
+        trackNumber.text = String(track.trackNumber)
+        trackName.text = track.trackName
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
