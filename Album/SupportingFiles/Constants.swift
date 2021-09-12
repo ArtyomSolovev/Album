@@ -10,7 +10,7 @@ import Foundation
 enum Constants {
     static let welcomeText = "Enter the album name there 👆"
     enum url {
-        static let BASE_URL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&limit=100&term="
+        static let BASE_URL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&limit=99&term="
         static let ALBUM_URL = "https://itunes.apple.com/lookup?entity=song&id="
     }
     enum id {

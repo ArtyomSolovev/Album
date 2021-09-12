@@ -5,12 +5,13 @@
 //  Created by Артем Соловьев on 09.09.2021.
 //
 
+import Foundation
 import UIKit
 
 class ViewController: UIViewController{
     
     // UI
-    @IBOutlet private weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var welcomeLabel: UILabel!
@@ -65,10 +66,11 @@ extension ViewController: UISearchBarDelegate {
             welcomeLabel.isHidden = true
             activityIndicator.startAnimating()
             var arrayOfHistory = UserDefaults.standard.object(forKey: "SavedHistory") as? [String] ?? [String]()
+            if arrayOfHistory.contains(searchBar.text!){
+                arrayOfHistory.remove(at: arrayOfHistory.firstIndex(of: searchBar.text!)!)
+            }
             arrayOfHistory.append(searchBar.text!)
             UserDefaults.standard.setValue(arrayOfHistory, forKey: "SavedHistory")
-            let vc = storyboard?.instantiateViewController(identifier:"HistoryVC") as! HistoryTableViewController
-            vc.viewDidLoad()
             ItunesConnection.instance.getAlbums(searchRequest: searchBar.text!) { (requestedAlbums) in
                 self.albums = requestedAlbums.sorted(by: {$0.collectionName < $1.collectionName})
                 DispatchQueue.main.async { [self] in
