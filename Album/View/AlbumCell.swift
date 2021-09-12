@@ -9,13 +9,13 @@ import UIKit
 
 class AlbumCell: UICollectionViewCell {
     
+//    UI
     @IBOutlet weak var albumImage: UIImageView!
-    @IBOutlet private weak var albumTitleLabel: UILabel!
+    @IBOutlet weak var albumTitleLabel: UILabel!
     
     // Method
     func updateCell (album: Album) {
         let imageUrl = URL(string: album.artworkUrl100)
-        
         DispatchQueue.global().async {
             if let imageData = try? Data(contentsOf: imageUrl!) {
                 DispatchQueue.main.async {
@@ -25,9 +25,4 @@ class AlbumCell: UICollectionViewCell {
         }
         albumTitleLabel.text = album.collectionName
     }
-    
-//    override func prepareForReuse() {
-//        albumImage.image = UIImage()
-//        albumTitleLabel.text = ""
-//    }
 }

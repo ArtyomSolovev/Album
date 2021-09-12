@@ -9,6 +9,7 @@ import UIKit
 
 class AlbumViewController: UIViewController {
     
+//    UI
     @IBOutlet private weak var albumLabel: UILabel!
     @IBOutlet private weak var artistLabel: UILabel!
     @IBOutlet private weak var styleLabel: UILabel!
@@ -20,7 +21,7 @@ class AlbumViewController: UIViewController {
     // Dependencies
     var album: Album!
     var image: UIImage!
-    var tracks = [Track]()
+    private var tracks = [Track]()
     var imageCache = NSCache<NSString, UIImage>()
     
     // MARK: - Lifecycle
@@ -36,7 +37,7 @@ class AlbumViewController: UIViewController {
     }
     
     // MARK: - Methods
-    func updateLabels () {
+    private func updateLabels () {
         albumLabel.text = album.collectionName
         artistLabel.text = album.artistName
         styleLabel.text = album.primaryStyleName
@@ -44,7 +45,7 @@ class AlbumViewController: UIViewController {
         yearLabel.text = album.releaseDate
     }
     
-    func updateImage()  {
+    private func updateImage()  {
         let searchImage = album.artworkUrl100.replacingOccurrences(of: "100x100bb", with: "500x500bb")
         let imageUrl = URL(string: searchImage)!
         if let cachedImage = imageCache.object(forKey: imageUrl.absoluteString as NSString) {
@@ -61,7 +62,7 @@ class AlbumViewController: UIViewController {
         }
     }
     
-    func loadTracks() {
+    private func loadTracks() {
         ItunesConnection.instance.getAlbumTracks(collectionId: album.collectionId) { (requestedTracks) in
             self.tracks = requestedTracks
             DispatchQueue.main.async {
@@ -71,6 +72,8 @@ class AlbumViewController: UIViewController {
     }
 }
 
+// MARK: - CollectionView methods
+
 extension AlbumViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,7 +81,7 @@ extension AlbumViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: Constants.id.trackId, for: indexPath) as? TrackCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ID.trackId, for: indexPath) as? TrackCell {
             cell.updateCell(track: tracks[indexPath.row])
             return cell
         }
